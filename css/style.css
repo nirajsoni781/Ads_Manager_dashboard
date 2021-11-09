@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d5d5d5 !important;
+  
+}
+
+        .hiddenRow {
+            display: none;
+        }
+
+        /* Page Template for the exported PDF */
+
+        .page-template {
+            font-family: "DejaVu Sans", "Arial", sans-serif;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .page-template .header {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            border-bottom: 1px solid #888;
+            color: #888;
+        }
+
+        .page-template .footer {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            right: 30px;
+            border-top: 1px solid #888;
+            text-align: center;
+            color: #888;
+        }
+
+        .page-template .watermark {
+            font-weight: bold;
+            font-size: 400%;
+            text-align: center;
+            margin-top: 30%;
+            color: #aaaaaa;
+            opacity: 0.1;
+            transform: rotate(-35deg) scale(1.7, 1.5);
+        }
+
+        /* Content styling */
+
+        .customer-photo {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-size: 32px 35px;
+            background-position: center center;
+            vertical-align: middle;
+            line-height: 32px;
+            box-shadow: inset 0 0 1px #999, inset 0 0 10px rgba(0, 0, 0, .2);
+            margin-left: 5px;
+        }
+
+        kendo-pdf-document .customer-photo {
+            border: 1px solid #dedede;
+        }
+
+        .customer-name {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 32px;
+            padding-left: 3px;
+        }
+
+@media print {
+    #print, tfoot, tbody tr:not(.printme) {
+      display: none !important;
+    }
+  }
+
+
+  
+.modal-dialog {
+ 
+          width: 360px;
+ 
+        }
+ 
+.modal-header {
+ 
+    background-color: #337AB7;
+ 
+    padding:16px 16px;
+ 
+    color:#FFF;
+ 
+    border-bottom:2px dashed #337AB7;
+ 
+ }
+.nav-tabs{
+  height:50px;
+}
+
+ a{
+    color: #8a949f;
+  }
+  body {
+      background: linear-gradient(70deg, #e6e6e6, #f7f7f7);
+      color: #514B64;
+      min-height: 100vh;
+    }
+  
+  .navbar-toggle{
+      background-color: rgb(168, 166, 166) !important;
+      
+    }
+    
+  .navbar-toggle:hover{
+      background-color: rgb(20, 20, 20);
+      color: black;
+    }
+  
+  
+    .navbar-inverse .navbar-nav>li>a{
+      background-color: rgb(255, 255, 255) !important;
+      color: #8a949f !important;
+     
+  
+    }
+    .navbar-inverse .navbar-nav>li>a:hover{
+      color: rgb(0, 0, 0) !important;
+  
+    }
+  
+    .navbar-inverse .navbar-nav>.list>a {
+      color: #8a949f;
+    
+    }
+  
+    .navigation>.list>a:active{
+      color: #0b1f33;
+    
+    }
+  
+  .navtabs>.nav>.active>a{
+      text-decoration: none;
+      background-color: transparent;
+      color: #aaaaaa !important;
+
+  }
+
+  a{
+      color: #838c96 !important;
+  }
+
+  a:hover{
+      color: #000, imp !important;
+  }
+.nav >li{
+    margin: 0%;
+    padding: 0% !important;
+   
+}
+
+.nav >li>{
+    background-color:red !important;
+
+}
+
+.nav >li>a:hover{
+    color:#000 !important;
+}
+
+
+.nav >li>a:focus{
+    color:rgb(185, 34, 34) !important;
+    text-transform: uppercase !important;
+    font-size: 16px !important;
+  
+}
+
+
+#dashboard{
+    background-color: #f4f5f7!important;
+}
+
+
+
+a:hover,a:focus{
+  text-decoration: none;
+  outline: none;
+}
+ .nav-tabs{
+  border: none !important;
+  margin: 0;
+}
+ .nav-tabs li a{
+  padding: 10px;
+  margin-right: 20px;
+  font-size: 17px;
+  font-weight: 200;
+  color: #293241;
+
+  border: none !important;
+  border-radius: 0;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+ .nav-tabs li a:hover,
+  .nav-tabs li.active a{ border: none; }
+  .nav-tabs li a:before{
+  
+  width: 100%;
+  height: 4px;
+  background: #f6f6f6;
+ 
+ 
+  bottom: 0;
+  left: 0;
+}
+  .nav-tabs li a:after{
+  content: "";
+  width: 0;
+  height: 4px;
+  background: #727cb6;
+  
+ 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+  .nav-tabs li:hover a:after,
+  .nav-tabs li.active a:after{
+  width: 100%;
+  opacity: 1;
+}
+ 
+
+@media only screen and (max-width: 479px){
+   .nav-tabs li{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+  }
+ .tab-content{ margin-top: 0; }
+}
+
+
+.login .container-fluid{
+  margin-top:0px !important;
+
+}
+
+
+@media (max-width: 390px) { 
+
+  .page-header>p{
+    font-size:25px !important;
+  }
+ }
+
+ @media (max-width: 318px) { 
+
+  .page-header>p{
+    font-size:20px !important;
+    padding: auto;
+  }
+ }
+
+
+ @media (max-width: 574px) { 
+
+  .nav-tabs> li>a{
+    font-size:15px !important;
+    padding: auto;
+  }
+ }
+
+ @media (max-width: 513px) { 
+
+  .nav-tabs> li>a{
+    font-size:13px !important;
+    padding: auto;
+  }
+ }
+
+
+ .nav{
+   display: inline;
+ }
+
+
+ footer{
+   display: inline-flex !important;
+   width: 100% !important;
+   text-align: center !important;
+
+ }
+
+
+ .text-center{
+   text-align: center !important;
+ }
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.scroll-tabs {
+	position: relative;
+	font-family: "Roboto", sans-serif;
+	background: #eee;
+}
+ @media (max-width: 767px) {
+.scroll-tabs {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+}
+.scroll-tabs .nav-tabs {
+	border-bottom: none;
+}
+.scroll-tabs .nav-tabs.nav-justified > li > a {
+	border: none;
+	border-radius: 0;
+}
+.scroll-tabs .nav-tabs.nav-justified > .active > a, .scroll-tabs .nav-tabs.nav-justified > .active > a:hover, .scroll-tabs .nav-tabs.nav-justified > .active > a:focus {
+	border: none;
+}
+.scroll-tabs .nav-tabs > li.active > a, .scroll-tabs .nav-tabs > li.active > a:hover, .scroll-tabs .nav-tabs > li.active > a:focus {
+	color: black;
+	cursor: default;
+	background-color: transparent;
+	border: none;
+	border-bottom-color: transparent;
+	opacity: 1;
+}
+.scroll-tabs .nav-tabs > li {
+	margin-bottom: 0;
+	line-height: 50px;
+}
+.scroll-tabs .nav-tabs > li > a {
+	padding: 1.125rem 1.5rem 1.0625rem;
+	color: rgba(0, 0, 0, 0.54);
+	font-size: 0.875rem;
+	font-weight: 500;
+	margin-right: 0;
+	line-height: 1;
+	border: none;
+	border-radius: 0;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.scroll-tabs .nav-tabs > li > a:hover, .scroll-tabs .nav-tabs > li > a:focus {
+	border-color: transparent;
+	background-color: transparent;
+}
+.scroll-tabs .scroll-tab-active-bar {
+	position: absolute;
+	bottom: 0;
+	width: 25%;
+	height: 3px;
+	background: #FC0;
+	transition: all 0.2s ease-in-out;
+}
+.scroll-tabs-bg {
+	background-color: #000;
+}
+.scroll-tabs-bg .nav-tabs > li > a {
+	color: #fff;
+}
+.scroll-tabs-bg .nav-tabs > li .dropdown-menu a {
+	color: #333333;
+}
+.scroll-tabs-bg .nav-tabs > li.active > a, .scroll-tabs-bg .nav-tabs > li.active > a:hover, .scroll-tabs-bg .nav-tabs > li.active > a:focus {
+	color: white;
+	font-weight: 500;
+}
+.scroll-tabs-bg .scroll-tabs-scroll-right, .scroll-tabs-bg .scroll-tabs-scroll-left {
+	background-color: #000;
+	color: #fff;
+}
+.scroll-tabs-scroll-container {
+	display: block;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.scroll-tabs-scroll-right {
+	float: right;
+	right: 0;
+	top: 0;
+}
+.scroll-tabs-scroll-left {
+	float: left;
+	left: 0;
+}
+.scroll-tabs-scroll-right, .scroll-tabs-scroll-left {
+	position: absolute;
+	z-index: 99;
+	text-align: center;
+	cursor: pointer;
+	display: none;
+	white-space: no-wrap;
+	vertical-align: middle;
+	padding: 0.75rem 1.5rem 0.375rem;
+	background-color: #fff;
+	color: #868e96;
+	line-height: 1.7;
+}
+.tab-content {
+	background: #f2f2f2;
+	padding: 15px;
+}
+h1 {
+	font-size: 90px;
+	color:#000;
+	position: absolute;
+	top: 45%;
+	text-align: center;
+	font-weight: 900;
+	display: block;
+	left: 0;
+	right: 0;
+	line-height: 110px;
+}
